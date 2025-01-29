@@ -1,0 +1,96 @@
+/*
+
+    Reditor.js
+    by resisigu
+    website: https://resisigu.42web.io/
+
+*/
+
+reditorjs {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+#editor-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 0px 3px rgba(0,0,0,0.24);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.toolbar {
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e2e4e7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.toolbar button{
+    margin: 2px;
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: all 0.2s ease;
+    position: relative;
+}
+.toolbar .dropdown {
+    margin: 2px;
+    padding: 0px 12px;
+    background-color: #ebebeb;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: all 0.2s ease;
+    position: relative;
+}
+.toolbar button:hover, .toolbar .dropdown:hover {
+    background-color: #e9ecef;
+}
+.toolbar button.active {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 3px;
+    top: 100%;
+    left: 0;
+}
+.dropdown-content.show {
+    display: block;
+}
+.dropdown-content a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.editor {
+    min-height: 300px;
+    padding: 16px;
+    overflow-y: auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.editor:focus {
+    outline: none;
+}
+.logo {
+    padding: 10px;
+}
